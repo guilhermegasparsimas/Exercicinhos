@@ -1,0 +1,44 @@
+import { useState } from 'react'
+import './App.css'
+
+function App() {
+  const[inputAntigo, setInputAntigo] = useState('')
+  const[inputNovo, setInputNovo] = useState('')
+  const[resultado, setResultado] = useState(0)
+
+  function calcularAumento(){
+    let antigo = Number(inputAntigo)
+    let novo = Number(inputNovo)
+    let diferenca = novo - antigo
+
+    let percentual = (diferenca/antigo) * 100
+
+    setResultado(percentual)
+  }
+  return (
+  <div className='container-vovo'>
+
+    <div>
+  <label >Valor antigo </label>
+  <input type="text" value={inputAntigo} onChange={(event) => setInputAntigo(event.target.value)}/>
+    </div>
+
+    <div>
+  <label >Valor novo </label>
+  <input type="text" value={inputNovo} onChange={(event) => setInputNovo(event.target.value)}/>
+    </div>
+
+    <div>
+    <button onClick={calcularAumento}>Calcular Aumento</button>
+    </div>
+
+{resultado > 0 && 
+  <div>
+    Aumento: {resultado.toFixed(1)}%
+  </div>
+}
+</div>
+  )
+}
+
+export default App
