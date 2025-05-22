@@ -1,0 +1,35 @@
+.contexto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.inpt{
+    padding: 10px;
+    width: 40vh;
+    border: none;
+    outline: none;
+    border-bottom:4px solid cadetblue;
+}
+
+.btn{
+    padding: 10px;
+    border: none;
+    background-color: cadetblue;
+    color: white;
+    cursor: pointer;
+}
+.btn:hover{
+    padding: 10px;
+    border: none;
+    background-color: white;
+    color: cadetblue;
+    cursor: pointer;
+    transition: 1.2s;
+}
+
+.mensagem{
+    color: red;
+}
