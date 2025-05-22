@@ -5,19 +5,19 @@ function Aluno() {
     const[notaA, setNotaA] = useState('')
     const[notaB, setNotaB] = useState('')
     const[notaReal, setNotaReal] = useState()
-    const{notaFinal, setNotaFinal} = useState()
+    
 
     function calcularNota(){     
         let media = (Number(notaA) + Number(notaB)) /2
         
       if(media >= 7){
         setNotaReal('APROVADO')
+       
       }else if(media >= 4){
         setNotaReal('RECUPERAÇÂO')
-       
+      
       }else{
         setNotaReal('REPROVADO')
-      
       }
       
       setNotaA('')
@@ -32,6 +32,7 @@ function Aluno() {
       
       <button className='btn-aprovacao' onClick={calcularNota}>Aprovação</button>
       {notaReal}
+
     </div>
   )
 }
