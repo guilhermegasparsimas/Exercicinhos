@@ -20,7 +20,7 @@ function Bondinho() {
 
   return (
     <div>
-      <h1>Bondinho</h1>
+      <h1>Bondinho 🚠</h1>
       <div className='contexto'>
         <input className='inpt' placeholder='Alunos' type="text" value={alunos} onChange={(event) => setAlunos(event.target.value)} />
         <input className='inpt' placeholder='Monitores' type="text" value={monitores} onChange={(event) => setMonitores(event.target.value)} />
