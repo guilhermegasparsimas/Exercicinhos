@@ -21,16 +21,22 @@ function App() {
 
   return (
     <>
-  <div>
+  <div className='container-app'>
+    <h1>Combustíveis</h1>
+    
+    <div className="app-box">
+
     <label>Gasolina </label>
-    <input type="text" value={inputGasolina} onChange={(event) => setInputGasolina(event.target.value)}/>
-    <button onClick={venderGasolina}>+</button>{totalGasolina}
+    <input className='inpt' type="text" value={inputGasolina} onChange={(event) => setInputGasolina(event.target.value)}/>
+    <button className='btn' onClick={venderGasolina}>+</button>{totalGasolina}
   </div>
-  <div>
   <label>Etanol </label>
-    <input type="text" value={inputEtanol} onChange={(event) => setInputEtanol(event.target.value)}/>
-    <button onClick={venderEtanol}>+</button>{totalEtanol}
-  </div>
+    <input className='inpt' type="text" value={inputEtanol} onChange={(event) => setInputEtanol(event.target.value)}/>
+    <button className='btn' onClick={venderEtanol}>+</button>{totalEtanol}
+
+
+    </div>
+   
     </>
   )
 }
