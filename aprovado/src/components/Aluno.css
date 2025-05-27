@@ -10,14 +10,29 @@
     border-radius: 10px;
    
 }
-
+.nota-real{
+    background-color: aliceblue;
+    padding: 15px;
+}
 .inputs-css{
     padding: 10px;
     border: none;
+    outline: none;
     border-bottom: 5px solid cadetblue;
    
 }
-
+    #aprovado{
+        color: green;
+        font-size: larger;
+    }
+    #reprovado{
+        color: red;
+        font-size: large;
+    }
+    #recuperacao{
+        color: red;
+        font-size: large;
+    }
 .btn-aprovacao{
     padding: 10px;
     background-color: cadetblue;
